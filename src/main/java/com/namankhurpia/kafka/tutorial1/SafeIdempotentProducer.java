@@ -15,7 +15,7 @@ public class SafeIdempotentProducer {
         //same keys goes to same partitions
         //if you dont set a key it will go in round robin fashion to any partition
 
-        Logger logger = LoggerFactory.getLogger(ProducerDemoWithCallbacksWithKeys.class.getName());
+        Logger logger = LoggerFactory.getLogger(SafeIdempotentProducer.class.getName());
 
         String bootstrapserver = "127.0.0.1:9092";
         //create producer properties
